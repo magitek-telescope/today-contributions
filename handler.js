@@ -19,7 +19,7 @@ module.exports.index = (event, context, callback) => {
     client.post(
       "statuses/update",
       {
-        status: `昨日のGitHub Contribution数は「${contributions.today}」でした。`
+        status: `[GitHub] ${TimeStamp.makeYesterday()}の Contribution 数は ${contributions.today} でした。`
       },
       (err, tweet, res)=>{
         if(err){
