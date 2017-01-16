@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "node": "node",
-    "build": "zip -r dist/package.zip handler.js TimeStamp.js .env"
+    "build": "zip -r dist/package.zip handler.js TimeStamp.js .env node_modules"
   },
   "repository": {
     "type": "git",
